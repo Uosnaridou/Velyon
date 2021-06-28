@@ -1,0 +1,685 @@
+
+                                                                        /* CORP */
+body {
+    background-color: #F0F0F0;
+    color: #F0F0F0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'verdana';
+}
+
+                                                                    /* HEADER */
+.enTete {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #adc24b;
+    z-index: 5;
+    top: 0;
+    position: fixed;
+    height: 75px;
+}
+
+header a {
+    text-decoration: none;
+    color: #303133;
+}
+
+#logovelo {
+    height: 70px;
+    width: 70px;
+    float: left;
+    display: flex;
+    margin: auto;
+}
+
+#blockLogo {
+    width: 175px;
+    display: flex;
+    justify-content: space-around;
+}
+
+                                                                    /* SLIDER */
+.img {
+    width: 100%;
+    height: auto;
+}
+
+#tout {
+    margin-top: 3%;
+    width: 960px;
+    margin: auto;
+}
+
+#slides {
+    position: relative;
+    padding: 0px;
+    list-style-type: none;
+    width: 960px;
+    margin: auto;
+    height: 640px;
+
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 1;
+
+
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+#pause,
+#play {
+
+    width: 8%;
+    cursor: pointer;
+}
+
+#pause:hover,
+#play:hover {
+    border-radius: 50%;
+    background-color: #80808085;
+}
+
+#flechedroite {
+    float: right;
+    top: 300px;
+    right: 9%;
+    position: absolute;
+    cursor: pointer;
+    height: 45px;
+    width: 50px;
+    z-index: 3;
+
+}
+
+#flechegauche {
+    float: left;
+    top: 300px;
+    left: 9%;
+    position: absolute;
+    cursor: pointer;
+    height: 45px;
+    width: 50px;
+    z-index: 3;
+}
+
+#etatSlide {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    position: absolute;
+    top: 85%;
+    z-index: 3;
+
+}
+
+                                                                        /* MAP + EXPLICATIONS */
+
+#map {
+    border: 2px #303133 solid;
+    height: 60%;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2%;
+
+}
+
+#explication {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 7%;
+}
+
+#texte {
+    color: #303133;
+    justify-content: space-around;
+    display: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+                                                                            /*INFO BULLE*/
+
+#bulle {
+    color: black;
+    height: 228px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bulle p {
+    color: darkred;
+    font-style: italic;
+    font-weight: bold;
+    margin: auto;
+}
+
+#bulle + p {
+    color: darkred;
+}
+
+#change {
+    display: none;
+
+}
+
+#deja {
+    display: none;
+}
+
+                                                                            /* FOOTER */
+footer {
+    display: none;
+    margin-top: 3%;
+    border: 4px #adc24b solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px #adc24b;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+#rangement {
+    display: flex;
+    width: 100%;
+    margin-bottom: 6%;
+}
+
+                                                                    /* BULLE RESERVATION */
+#formulaire {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#formulaire label {
+    color: #303133;
+}
+
+#nom {
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+#prenom {
+
+    margin: auto;
+}
+
+#adresse,
+#nombre {
+    color: black;
+}
+
+#reservation {
+    text-align: center;
+    width: 50%;
+    color: #303133;
+}
+
+#reservation p {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #303133;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+#signature {
+    margin: auto;
+    display: none;
+}
+
+                                                                            /* BULLE RECAP */
+
+#recap {
+    text-align: center;
+    width: 50%;
+    color: black;
+}
+
+#recap p {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #303133;
+}
+
+                                                                            /* CANVAS */
+#canvas {
+    border: 2px solid #999;
+    border-radius: 20px;
+    margin: 0 auto 20px auto;
+    display: block;
+    visibility: hidden;
+    background: #fff;
+    cursor: crosshair;
+}
+
+#image img {
+    border: 1px black solid;
+    background-color: white;
+    border-radius: 19px;
+    width: 100%;
+}
+
+                                                                            /* TIMER */
+#timer {
+    text-align: center;
+    margin-top: 2%;
+    color: #303133;
+    font-weight: bold;
+}
+
+                                                                            /* BOUTTONS */
+.boutton {
+    cursor: pointer;
+    border-radius: 11%;
+    border: 2px #303133 solid;
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 20px;
+    align-items: center;
+    margin: auto;
+}
+
+.boutton:hover {
+    background-color: #00000057;
+}
+
+#resetcanva {
+    cursor: pointer;
+    display: none;
+    margin: auto;
+    border-radius: 19%;
+    background-color: #F0F0F0;
+    color: #303133;
+    font-weight: bold;
+    height: 34px;
+    border-color: #303133;
+}
+
+#reset {
+    cursor: pointer;
+    display: none;
+    margin-left: 35%;
+}
+
+#choix {
+    justify-content: center;
+    flex-direction: row-reverse;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#boutonValider {
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 19%;
+    background-color: #F0F0F0;
+    color: #303133;
+    font-weight: bold;
+    height: 34px;
+    border-color: #303133;
+}
+
+#annuler {
+    cursor: pointer;
+    border-radius: 19%;
+    background-color: #F0F0F0;
+    color: #303133;
+    font-weight: bold;
+    height: 34px;
+    border-color: #303133;
+}
+
+#annuler:hover,
+#boutonValider:hover,
+#resetcanva:hover,
+#station:hover {
+    background-color: #00000029;
+}
+
+#station {
+    cursor: pointer;
+    border-radius: 12%;
+    background-color: #F0F0F0;
+    color: #303133;
+    height: 30px;
+    border-color: #303133;
+}
+
+                                                                                    /* TITRES  */
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'arial';
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+    align-items: center;
+    display: flex;
+    font-family: 'Arial';
+
+}
+
+h2 {
+    text-align: center;
+    margin-top: 90px;
+    color: #303133;
+    font-size: 30px;
+
+}
+
+h2 + p {
+    color: black;
+    text-align: center;
+    margin-top: -21px;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #303133;
+    margin-top: 5%;
+}
+
+h4 {
+    width: 36%;
+    text-align: center;
+    display: flex;
+    font-size: 31px;
+    color: #303133;
+    margin: auto;
+}
+
+h5 {
+    display: none;
+    text-align: center;
+    font-size: 28px;
+    color: #303133;
+}
+
+h6 {
+    text-align: center;
+    font-size: 28px;
+    color: #303133;
+    margin-top: 50px;
+    height: 0;
+}
+
+                                                                                            /* RESPONSIVES */
+
+/* RESPONSIVES 900 px */
+@media screen and (max-width: 900px) {
+    h2 {
+        visibility: visible;
+        margin-top: 11%;
+        font-size: 35px;
+    }
+
+    #tout {
+        margin-top: 3%;
+        width: 100%;
+        margin: auto;
+    }
+
+    #etatSlide {
+        display: none;
+    }
+
+    #slides {
+        width: 100%;
+    }
+
+    #map {
+        width: 99%;
+    }
+
+    footer {
+        width: 96%;
+    }
+
+}
+
+/* RESPONSIVES 800 px */
+@media screen and (max-width: 824px) {}
+
+/* RESPONSIVES 708 px */
+@media screen and (max-width: 708px) {
+
+    /* HEADER */
+    .enTete {
+        margin-right: 16px;
+        width: 100%;
+        justify-content: inherit;
+
+    }
+
+    h1 {
+        display: none;
+    }
+
+    /* SLIDER */
+    #slides {
+        height: 461px;
+    }
+
+    #responsive {
+        height: inherit;
+        width: 400%;
+        display: flex;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    #li {
+        height: inherit;
+        width: 100%
+    }
+
+    /*EXPLICATION*/
+    #explication1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #texte {
+        display: flex;
+    }
+
+    /*IMAGES*/
+    .img2 {
+        height: inherit;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #imgE1,
+    #imgE2,
+    #imgE3 {
+        width: 20%;
+    }
+
+    /*BOUTTONS*/
+    #bouttonCanva {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+/* RESPONSIVES 610 px */
+@media screen and (max-width: 610px) {
+    header {
+        position: initial;
+        margin-bottom: 8%;
+        height: 125px;
+    }
+
+    #slides {
+        height: 395px;
+    }
+
+    #footer {
+        display: block;
+    }
+
+    footer {
+        border-radius: 30px
+    }
+
+    #canvas {
+        margin-top: 4%;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    #reservation {
+        width: auto;
+    }
+
+    #rangement {
+        display: initial;
+    }
+
+    #footer {
+        margin: auto;
+    }
+
+    #recap {
+        margin: auto;
+    }
+}
+
+/* RESPONSIVES 534 px */
+@media screen and (max-width: 534px) {
+    #slides {
+        height: 344px;
+    }
+
+    #flechegauche,
+    #flechedroite {
+        top: 150px;
+    }
+}
+
+/* RESPONSIVES 497 px */
+@media screen and (max-width: 497px) {
+    h1 {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    h4 {
+        width: 45%;
+    }
+
+    .enTete {
+        margin-right: auto;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    header {
+        display: block;
+    }
+
+    #slides {
+        height: 320px;
+    }
+
+    #flechegauche,
+    #flechedroite {
+        height: 35px;
+        width: 40px;
+    }
+
+    #blockLogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* RESPONSIVES 381 px */
+@media screen and (max-width: 381px) {
+
+    #imgE1,
+    #imgE2,
+    #imgE3 {
+        width: 32%;
+    }
+
+    h4 {
+        width: 57%;
+    }
+
+    #slides {
+        height: 254px;
+    }
+}

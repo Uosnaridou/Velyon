@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaaQ0ZCvU6nKtY60VMi58V4uaEtu7n1r4"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Projet 3</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <div id="blockLogo">
+            <img src="img/logovelorouge.png" alt="logo" id="logovelo" />
+            <h1> Vélyon</h1>
+        </div>
+        <p class="enTete">
+            <a href="#diaporama">Comment Réserver</a>
+            <a href="#explication">Explication</a>
+            <a href="#map">Carte</a>
+        </p>
+    </header>
+
+
+
+    <h2 id="diaporama">Comment réserver :</h2>
+    <p>Attention !<br />Une réservation de vélo est valable seulement 20 minutes</p>
+
+    <div id="slides">
+        <ul>
+            <li class="slide showing">
+                <img src="img/slide1.png" alt="slider 1" id="img1" class="img" />
+            </li>
+            <li class="slide">
+                <img src="img/slide2.png" alt="slider 2" id="img2" class="img" />
+            </li>
+            <li class="slide">
+                <img src="img/slide3.png" alt="slider 3" id="img3" class="img" />
+            </li>
+        </ul>
+
+        <div id="fleches">
+            <img src="img/gauche.png" alt="gauche" id="flechegauche" />
+            <img src="img/droite.png" alt="droite" id="flechedroite" />
+        </div>
+
+        <div id="etatSlide">
+            <img src="img/pause.png" alt="pause" class="controls" id="pause">
+            <img src="img/play.png" alt="play" class="controls" id="play">
+        </div>
+    </div>
+
+
+    <div id="explication">
+        <div id="explication1">
+            <img src="img/explication3.png" alt="explication 1" id="imgE1" />
+            <img src="img/explication1.png" alt="explication 2" id="imgE2" />
+            <img src="img/explication2.png" alt="explication 3" id="imgE3" />
+        </div>
+        <div id="texte">
+            <p>Station ouverte</p>
+            <p>Station ne contenant aucun vélo disponible</p>
+            <p>Station fermée</p>
+        </div>
+
+    </div>
+
+    <div id="map">
+
+    </div>
+
+
+    <footer>
+        <h4>Votre réservation est bien validée</h4>
+        <div id="timer"></div>
+        <div id="rangement">
+            <div id="reservation">
+                <h5 id="titre">Réserver un vélo</h5>
+                <div id="formulaire"></div>
+            </div>
+            <div id="footer"></div>
+            <div id="recap"></div>
+
+            <div id="signature">
+                <h6>Signature</h6>
+                <canvas id="canvas"></canvas>
+                <div id="bouttonCanva">
+                    <button id="resetcanva">Réinitialiser</button>
+                </div>
+            </div>
+        </div>
+        <div id="choix">
+            <button id="boutonValider">Valider</button>
+            <button id="annuler">Annuler</button>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/signature.js"></script>
+    <script src="js/station.js"></script>
+    <script src="js/affichage.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/projet3.js"></script>
+    <script src="js/evenement.js"></script>
+    <script src="js/maps.js"></script>
+
+</body>
+
+</html>
